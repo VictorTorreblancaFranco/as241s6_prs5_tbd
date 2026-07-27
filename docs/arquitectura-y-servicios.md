@@ -27,7 +27,7 @@ EDUNOVA no es un solo programa gigante. Está dividido en pequeños programas in
 El sistema tiene tres capas principales:
 
 1. **Pantalla (Frontend - Angular):** Es la página web que ven los profesores, alumnos y apoderados.
-2. **Puerta de Entrada (API Gateway):** Es la única entrada a las tripas del sistema. Recibe las peticiones de la pantalla, verifica que el usuario tenga permiso y redirige la petición al microservicio correcto.
+2. **Puerta de Entrada (API Gateway):** Es la única entrada al sistema. Recibe las peticiones de la pantalla, verifica que el usuario tenga permiso y redirige la petición al microservicio correcto.
 3. **Microservicios (Backend - Java / WebFlux):** Procesan la información y la guardan en su propia base de datos (PostgreSQL Neon).
 
 ```text
@@ -45,6 +45,7 @@ El sistema tiene tres capas principales:
         +---> [ Notas ] -----------------> Base de Datos de Notas (db_grading)
         +---> [ Bienestar ] -------------> Base de Datos de Bienestar (db_welfare)
         +---> [ Comunicaciones ] --------> Base de Datos de Comunicaciones (db_comms)
+```
 
 | Microservicio | Puerto | Descripción de su Función |
 |---|---|---|
